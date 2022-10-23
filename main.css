@@ -58,13 +58,13 @@ section {
     grid-column: span 100%;
     padding-top: 2rem;
     display: flex;
-    gap: 4rem .5rem;
+    gap: 4rem .1rem;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
 article {
-    width: 25rem;
+    width: 20rem;
 }
 
 
