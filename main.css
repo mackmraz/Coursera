@@ -4,30 +4,62 @@
 }
 
 body {
-    background-color: rgb(203, 251, 219);
+    background-color: #A3EBB1;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     margin-top: 3rem;
     margin-bottom: 3rem;
     margin-right: 5%;
     margin-left: 5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header nav nav nav"
+        "section section section section"
+        "footer footer footer footer";
+
+}
+
+header {
+    grid-area: header;
+    background-color: #116530;
+}
+
+section {
+    grid-area: section;
+    display: flex;
+
+}
+
+footer {
+    grid-area: footer;
 }
 
 header > img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 7.5rem;
+    width: 5rem;
+    padding: 1rem;
 }
 
-nav ul {
-    display: flex;
-    flex-direction: column;
+nav {
+    grid-area: nav;
+    background-color: #116530;
 }
 
 nav li {
     padding: 1rem;
+    display:inline-flex;
+    background-color: #21B6A8;
 }
 
 li {
     list-style: none;
+    color: aliceblue;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
 }
