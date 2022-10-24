@@ -13,11 +13,11 @@ body {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas: 
-        "header header"
-        "nav nav"
-        "hero hero"
-        "section section"
-        "footer footer";
+        "header header header"
+        "nav nav nav"
+        "hero hero hero"
+        "section section section"
+        "footer footer footer";
     row-gap: 1rem;
     column-gap: 1rem;
 }
@@ -95,22 +95,29 @@ a:hover {
 
 header {
     grid-area: header;
-    border-bottom: .15rem solid #24847C;
+    border-bottom: .15rem solid rgb(36, 132, 124);
 }
 
 section {
     grid-area: section;
     grid-column: span 100%;
-    padding: 1rem 0;
     display: flex;
-    gap: 4rem .1rem;
+    gap: 1rem .1rem;
     justify-content: space-around;
     flex-wrap: wrap;
+
 }
 
 article {
-    width: 33%;
-    min-width: 20rem;
+    width: 30%;
+    min-width: 25rem;
+    padding: 1rem;
+    background-color: rgba(36, 132, 124, 0.1);
+}
+
+.article-img {
+    width: 100%;
+    padding-top: 1rem;    
 }
 
 
