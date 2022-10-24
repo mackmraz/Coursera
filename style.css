@@ -127,6 +127,7 @@ footer {
     padding: 1rem 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 header > img {
@@ -135,5 +136,9 @@ header > img {
     margin-right: auto;
     width: 10rem;
     padding: 1rem;
+}
+
+#footer-img {
+    width: 3rem;
 }
 
